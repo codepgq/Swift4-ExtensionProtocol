@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExtensionProtocol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Vpg-fP-Gk5">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhc-2e-Eun">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
+                                        <state key="normal" title="data toHex"/>
+                                        <connections>
+                                            <action selector="toHexBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iQz-Qm-o67"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJK-mc-DMR">
+                                        <rect key="frame" x="0.0" y="129.5" width="375" height="129.5"/>
+                                        <state key="normal" title="data toUint8"/>
+                                        <connections>
+                                            <action selector="toUInt8BtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1HO-Er-r07"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nt3-DY-oHA">
+                                        <rect key="frame" x="0.0" y="259" width="375" height="129"/>
+                                        <state key="normal" title="color.red"/>
+                                        <connections>
+                                            <action selector="redBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DdV-oN-67K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5h-qy-kOK">
+                                        <rect key="frame" x="0.0" y="388" width="375" height="129.5"/>
+                                        <state key="normal" title="color.green"/>
+                                        <connections>
+                                            <action selector="greenBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vsv-d6-SK3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSS-Cy-DjW">
+                                        <rect key="frame" x="0.0" y="517.5" width="375" height="129.5"/>
+                                        <state key="normal" title="color.blue"/>
+                                        <connections>
+                                            <action selector="blueBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gRa-Vi-z7Y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vpg-fP-Gk5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qq5-Yr-2Ay"/>
+                            <constraint firstItem="Vpg-fP-Gk5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YE0-uf-vMV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vpg-fP-Gk5" secondAttribute="bottom" id="pYM-tz-6hv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vpg-fP-Gk5" secondAttribute="trailing" id="pg3-We-sLD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
